@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background: #eee;
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #212121;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+/*START*/
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgb(0 0 0 / 10%), -30px 0px 40px rgb(0 0 0 / 10%);
+}
+
+.section-1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-text {
+  height: 50vh;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-text p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: rgb(73, 73, 73);
+  margin-bottom: 1.8rem;
+}
+
+.landing-text a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+  padding: 1.2rem 1.9rem;
+  border-radius: 1rem;
+  font-family: inherit;
+  line-height: 0;
+}
+
+.landing-image {
+  background: url(https://images.unsplash.com/photo-1522206024047-9c925421675b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit)
+    no-repeat center top / cover;
+  height: 50vh;
+}
+.header {
+  background: #333;
+  padding: 1.6rem;
+}
+
+.header h2 {
+  font-size: 1.4rem;
+  display: inline;
+  border-left: 1px dotted white;
+  border-right: 1px dotted white;
+  color: white;
+  padding: 0 10px;
+}
+
+img {
+  width: 100%;
+}
+.caption {
+  padding: 1rem;
+}
+.caption h3 {
+  font-weight: 600;
+}
+
+footer {
+  padding: 3rem 0;
+}
+footer h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  margin: 0;
+}
+footer p {
+  margin: 4px;
+}
+
+@media (min-width: 600px) {
+  .section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 50fr);
+  }
+  .landing-text {
+    height: 100vh;
+  }
+  .landing-image {
+    height: 100vh;
+  }
+} ;
